@@ -1,0 +1,51 @@
+body {
+    background-color: antiquewhite;
+}
+
+.child {
+    padding: 10px;
+}
+
+.borders {
+    border: 2px solid rgb(163, 230, 202);
+    border-radius: 30px;
+}
+
+.avatar {
+    width: 220px;
+    height: 150px;
+}
+
+.card {
+    width: 600px;
+    margin: 70px auto ;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(163, 230, 202);
+    font-family: serif;
+    font-style: italic;
+    color: rgb(155, 105, 105);
+    border-bottom: 10px solid rgb(155, 105, 105);
+    box-shadow: 20px 10px 4px rgba(0, 0, 0, 0.507);
+}
+@keyframes cardAnimation {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-20px); /* +20 down , -20 up */
+        opacity: 1;
+    }
+}
+
+.card:hover {
+    animation: cardAnimation  0.8s ease forwards ;
+}
+
+
+
+
+
